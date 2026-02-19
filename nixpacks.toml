@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["nodejs_18", "python311"]
+
+[phases.install]
+cmds = ["npm install", "pip install python-telegram-bot==20.7 yt-dlp gTTS requests"]
+
+[start]
+cmd = "node server.js" 
